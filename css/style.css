@@ -39,6 +39,10 @@ p {
   margin: 0 auto;
 }
 
+button {
+  cursor: pointer;
+}
+
 /* ======================================== header ========================================= */
 .main-header {
   border-bottom: 1px solid #e7e9fc;
@@ -683,8 +687,16 @@ input::placeholder {
   fill: #4d5ae5;
 }
 
-.input-items:focus {
+.text-comment:focus,
+.text-comment:hover {
   border-color: #4d5ae5;
+  outline: none;
+}
+
+.input-items:focus,
+.input-items:hover {
+  border-color: #4d5ae5;
+  outline: none;
 }
 
 .input-container {
