@@ -503,7 +503,7 @@
           </p>
         </div>
 
-        <form class="form-list">
+        <form class="form-window">
           <div class="form-container">
             <label class="form-label-name" for="username">Name</label>
             <div class="input-container">
@@ -537,13 +537,28 @@
             </div>
           </div>
           <div class="form-container">
-            <label class="form-label-name" for="comment">Comment</label>
+            <label class="form-label-name text-name" for="comment">Comment</label>
             <textarea
               class="text-comment"
               name="comment"
               placeholder="Text input"
               id="comment"
             ></textarea>
+            <div class="check">
+              <input
+                type="checkbox"
+                name="policy"
+                value="accept"
+                id="chebox-policy"
+              />
+              <label class="name-checkbox" for="chebox-policy"
+                >I accept the terms and conditions of the
+                <span class="style-policy"
+                  ><a class="link link-policy" href="">Privacy Policy</a></span
+                ></label
+              >
+            </div>
+            <button class="send-form" type="button">Send</button>
           </div>
         </form>
       </div>
