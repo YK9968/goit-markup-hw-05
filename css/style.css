@@ -517,13 +517,13 @@ input {
   fill: #ffffff;
 }
 
-.footer-form-inp {
-  display: flex;
-}
-
 .subscribe {
   display: flex;
   flex-direction: column;
+}
+
+.footer-subscribe {
+  display: flex;
 }
 
 .footer-form-sub {
@@ -536,6 +536,7 @@ input {
   margin-right: 24px;
   width: 264px;
   height: 40px;
+  outline: none;
 }
 
 input::placeholder {
