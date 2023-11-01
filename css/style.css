@@ -757,20 +757,18 @@ input::placeholder {
   line-height: 1.17;
   letter-spacing: 0.04em;
   font-weight: 400;
-  
 }
 
-.icon-v {
+.castom-checkbox:checked + .name-checkbox > .icon-checkbox {
   fill: #f4f4fd;
-  width: 10px;
-  height: 8px;
+  border: none;
+  background-color: #404bbf;
 }
 
 .icon-checkbox {
   display: inline-flex;
-  background-color: #404bbf;
   border-radius: 2px;
-  border: solid rgba(46, 47, 66, 0.4);
+  border: 1px solid rgba(46, 47, 66, 0.4);
   width: 16px;
   height: 16px;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
@@ -778,7 +776,7 @@ input::placeholder {
     fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
   align-items: center;
   justify-content: center;
-  margin-right: 8px;;
+  margin-right: 8px;
   fill: transparent;
 }
 
