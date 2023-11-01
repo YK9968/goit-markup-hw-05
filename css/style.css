@@ -775,6 +775,7 @@ input::placeholder {
   justify-content: center;
   margin-right: 8px;
   fill: transparent;
+  cursor: pointer;
 }
 
 .link-policy {
