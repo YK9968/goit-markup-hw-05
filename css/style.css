@@ -600,8 +600,8 @@ input::placeholder {
   left: 50%;
   transform: translate(-50%, -50%);
   padding: 72px 24px 24px 24px;
-  box-shadow: зі значенням 0px 1px 1px rgba(0, 0, 0, 0.14),
-    0px 1px 3px rgba(0, 0, 0, 0.12), 0px 2px 1px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -617,6 +617,9 @@ input::placeholder {
   right: 24px;
   align-items: center;
   justify-content: center;
+  padding: 0;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .close:hover,
@@ -645,12 +648,12 @@ input::placeholder {
   line-height: 1.5;
   letter-spacing: 0.02em;
   text-align: center;
+  margin-bottom: 16px;
 }
 .form-window {
-  margin-top: 16px;
+  margin-bottom: 8px;
   display: flex;
   flex-direction: column;
-  gap: 8px;
 }
 
 .form-container {
@@ -701,6 +704,7 @@ input::placeholder {
 }
 
 .input-items {
+  line-height: 1.5;
   padding: 11px 0;
   padding-left: 38px;
   width: 100%;
@@ -710,6 +714,7 @@ input::placeholder {
   background-color: transparent;
   outline: transparent;
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
 }
 
 .input-items:focus + .input-icon,
@@ -753,6 +758,27 @@ input::placeholder {
   margin-left: 8px;
 }
 
+.icon-v {
+  fill: #f4f4fd;
+  width: 10px;
+  height: 8px;
+}
+
+.icon-checkbox {
+  display: inline-flex;
+  background-color: #404bbf;
+  border-radius: 2px;
+  border: solid rgba(46, 47, 66, 0.4);
+  width: 16px;
+  height: 16px;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    border 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  align-items: center;
+  justify-content: center;
+  fill: transparent;
+}
+
 .link-policy {
   color: #4d5ae5;
   font-size: 12px;
@@ -776,7 +802,7 @@ input::placeholder {
   color: #ffffff;
   display: inline-block;
   text-align: center;
-  font-family: Roboto;
+  font-family: 'Roboto', sans-serif;
   font-weight: 500;
   line-height: 1.5;
   letter-spacing: 0.04em;

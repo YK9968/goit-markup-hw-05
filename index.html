@@ -64,11 +64,7 @@
           <h2 class="advantages-title visually-hidden">Advantages</h2>
           <ul class="advantages-icon-list">
             <li class="advantages-icon-item">
-              <div class="advantages-icon">
-                <svg width="64" height="64">
-                  <use href="./images/icons.svg#icon-antenna-1"></use>
-                </svg>
-              </div>
+              <div class="advantages-icon"></div>
             </li>
             <li class="advantages-icon-item">
               <div class="advantages-icon">
@@ -546,18 +542,22 @@
             ></textarea>
           </div>
           <div class="check">
-            <input class="visually-hidden"
+            <input
+              class="visually-hidden"
               type="checkbox"
               name="user-privacy"
               value="true"
               id="user-privacy"
             />
+            <span class="icon-checkbox">
+              <svg class="icon-v">
+                <use href="./images/icons.svg#icon-VectorV"></use>
+              </svg>
+            </span>
             <label class="name-checkbox" for="user-privacy"
               >I accept the terms and conditions of the
-              <span class="style-policy"
-                ><a class="link link-policy" href="">Privacy Policy</a></span
-              ></label
-            >
+              <a class="link link-policy" href="">Privacy Policy</a>
+            </label>
           </div>
           <button class="send-form" type="button">Send</button>
         </form>
